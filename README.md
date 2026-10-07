@@ -18,8 +18,8 @@ This repository tracks my journey in mastering **Modern SQL** (from Basic to Adv
 | :---: | :--- | :---: | :--- | :---: |
 | 01 | US Employees Location Report | 🟢 Basic | `INNER JOIN`, Filtering | 🟩 Completed |
 | 02 | Department Salary Summary | 🟢 Basic | `GROUP BY`, `HAVING`, Aggregation | 🟩 Completed |
-| 03 | Income Class & Tenure Analysis | 🟢 Basic | `CASE WHEN`, Date Functions | 🟨 In Progress |
-| 04 | Unregistered Dependents Audit | 🟢 Basic | `LEFT JOIN`, `IS NULL` | ⬜ Pending |
+| 03 | Income Class & Tenure Analysis | 🟢 Basic | `CASE WHEN`, Date Functions | 🟩 Completed |
+| 04 | Unregistered Dependents Audit | 🟢 Basic | `LEFT JOIN`, `IS NULL` | 🟨 In Progress |
 | 05 | Manager Hierarchy Mapping | 🟡 Intermediate | `Self-JOIN` | ⬜ Pending |
 | 06 | Salary Range Compliance Check | 🟡 Intermediate | `INNER JOIN`, Range Filter | ⬜ Pending |
 | 07 | High Earners vs Overall Average | 🟡 Intermediate | CTE, Subquery | ⬜ Pending |
