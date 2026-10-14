@@ -1,0 +1,36 @@
+
+-- ====================================================
+-- Exercise 04: Unregistered Dependents Audit
+-- Level: Basic
+-- Description: Retrieve all employees who do not have any registered 
+--              dependents in the system using LEFT JOIN and IS NULL.
+-- ====================================================
+
+SELECT
+  e.employee_id,
+  CONCAT(e.first_name, ' ', e.last_name) AS full_name,
+  e.email
+FROM
+  employees e
+  LEFT JOIN dependents d ON d.employee_id = e.employee_id
+WHERE
+  d.employee_id IS NULL
+ORDER BY
+  e.employee_id;
+
+/* 
+EXPECTED OUTPUT:
++-------------+------------+------------+------------------------------+
+| employee_id | full_name          | email                            |
++-------------+------------+------------+------------------------------+
+| 120         | Matthew Weiss      | matthew.weiss@sqltutorial.org    |
+| 121         | Adam Fripp         | adam.fripp@sqltutorial.org       |
+| 122         | Payam Kaufling     | payam.kaufling@sqltutorial.org   |
+| 123         | Shanta Vollman     | shanta.vollman@sqltutorial.org   |
+| 126         | Irene Mikkilineni  | irene.mikkilineni@sqltutorial.org|
+| 177         | Jack Livingston    | jack.livingston@sqltutorial.org  |
+| 178         | Kimberly Grant     | kimberly.grant@sqltutorial.org   |
+| 179         | Charles Johnson    | charles.johnson@sqltutorial.org  |
+| 192         | Sarah Bell         | sarah.bell@sqltutorial.org       |
++-------------+------------+------------+------------------------------+
+*/
