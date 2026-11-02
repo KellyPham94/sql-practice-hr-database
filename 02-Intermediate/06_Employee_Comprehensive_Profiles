@@ -1,0 +1,39 @@
+-- ====================================================
+-- Exercise 06: Employee Comprehensive Profiles
+-- Level: Intermediate
+-- Description: Combine multiple tables (employees, jobs, departments) 
+--              using CTE and INNER JOIN to generate comprehensive employee profiles.
+-- ====================================================
+
+WITH t1 AS (
+    SELECT 
+        e.employee_id,
+        CONCAT(e.first_name, ' ', e.last_name) AS full_name,
+        e.department_id,
+        j.job_title,
+        e.salary
+    FROM employees e
+    INNER JOIN jobs j ON e.job_id = j.job_id
+)
+SELECT 
+    t1.employee_id,
+    t1.full_name,
+    t1.job_title,
+    d.department_name,
+    t1.salary
+FROM t1
+INNER JOIN departments d ON t1.department_id = d.department_id
+ORDER BY t1.salary DESC;
+
+/* 
+EXPECTED OUTPUT:
++-------------+---------------+----------------------------------+-----------------+----------+
+| employee_id | full_name     | job_title                        | department_name | salary   |
++-------------+---------------+----------------------------------+-----------------+----------+
+| 100         | Steven King   | President                        | Executive       | 24000.00 |
+| 101         | Neena Kochhar | Administration Vice President    | Executive       | 17000.00 |
+| 102         | Lex De Haan   | Administration Vice President    | Executive       | 17000.00 |
+| 145         | John Russell  | Sales Manager                    | Sales           | 14000.00 |
+| 146         | Karen Partners| Sales Manager                    | Sales           | 13500.00 |
++-------------+---------------+----------------------------------+-----------------+----------+
+*/
