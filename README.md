@@ -20,9 +20,9 @@ This repository tracks my journey in mastering **Modern SQL** (from Basic to Adv
 | 02 | Department Salary Summary | 🟢 Basic | `GROUP BY`, `HAVING`, Aggregation | 🟩 Completed |
 | 03 | Income Class & Tenure Analysis | 🟢 Basic | `CASE WHEN`, Date Functions | 🟩 Completed |
 | 04 | Unregistered Dependents Audit | 🟢 Basic | `LEFT JOIN`, `IS NULL` | 🟩 Completed |
-| 05 | Manager Hierarchy Mapping | 🟡 Intermediate | `Self-JOIN` | 🟨 In Progress |
-| 06 | Salary Range Compliance Check | 🟡 Intermediate | `INNER JOIN`, Range Filter | ⬜ Pending |
-| 07 | High Earners vs Overall Average | 🟡 Intermediate | CTE, Subquery | ⬜ Pending |
+| 05 | Department Employee Count & Payroll| 🟡 Intermediate | `GROUP BY`, `HAVING`, `SUM` | 🟩 Completed |
+| 06 | Employee Comprehensive Profiles | 🟡 Intermediate | `INNER JOIN`, `Multi-table Join` | 🟩 Completed |
+| 07 | High Earners vs Overall Average | 🟡 Intermediate | CTE, Subquery | 🟨 In Progress |
 | 08 | Above Department Average Earners | 🟡 Intermediate | Correlated Subquery / CTE | ⬜ Pending |
 | 09 | Internal Department Salary Ranking | 🔴 Advanced | `DENSE_RANK() OVER()` | ⬜ Pending |
 | 10 | Top 3 Highest Earners per Department | 🔴 Advanced | CTE + Window Function | ⬜ Pending |
