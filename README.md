@@ -1,7 +1,9 @@
 # 📊 SQL Practice - HR Database
 
 This repository tracks my journey in mastering **Modern SQL** (from Basic to Advanced concepts) using the standard **HR Database**.
-
+## 📌 Data Source & Acknowledgements
+- **Database & Playground:** The standard HR Database and interactive SQL playground are provided by [SQLTutorial.org](https://www.sqltutorial.org/).
+  
 ---
 
 ## 🛠️ Tech Stack & Key Concepts Covered
