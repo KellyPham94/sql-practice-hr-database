@@ -24,8 +24,8 @@ This repository tracks my journey in mastering **Modern SQL** (from Basic to Adv
 | 06 | Employee Comprehensive Profiles | 🟡 Intermediate | `INNER JOIN`, `Multi-table Join` | 🟩 Completed |
 | 07 | High Earners vs Overall Average | 🟡 Intermediate | CTE, Subquery | 🟩 Completed |
 | 08 | Above Department Average Earners | 🟡 Intermediate | Subquery / CTE | 🟩 Completed |
-| 09 | Internal Department Salary Ranking | 🔴 Advanced | `DENSE_RANK() OVER()` | 🟨 In Progress |
-| 10 | Top 3 Highest Earners per Department | 🔴 Advanced | CTE + Window Function | ⬜ Pending |
-| 11 | Cumulative Salary (Running Total) | 🔴 Advanced | `SUM() OVER(ORDER BY)` | ⬜ Pending |
+| 09 | Internal Department Salary Ranking | 🔴 Advanced | `DENSE_RANK() OVER()` | 🟩 Completed |
+| 10 | Top 3 Highest Earners per Department | 🔴 Advanced | CTE + Window Function | 🟩 Completed |
+| 11 | Cumulative Salary (Running Total) | 🔴 Advanced | `SUM() OVER(ORDER BY)` |  🟨 In Progress |
 | 12 | Organizational Structure Hierarchy | 🔴 Advanced | Recursive CTE | ⬜ Pending |
 
